@@ -1,0 +1,78 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 6em;
+    padding: 1em;  
+    background: var(--alios-white);
+    gap: 1em;
+}
+.header h2{
+    font-weight: bold;
+}
+.header p{
+    color: rgb(134, 134, 134);
+}
+.header .mat-icon:hover{
+    cursor: pointer;
+}
+
+.headerNavBar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: .4em;
+}
+.userMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 1em;
+    width: 100%;
+}
+.userMenu .mat-icon{
+    font-size: 1.6rem;
+}
+.userName{
+    font-size: 1em;
+    font-weight: bold;
+    padding: .5em 1em;
+    border: 1px solid var(--alios-primary);
+    border-radius: 1em;
+    color:  var(--alios-primary);
+    transition: .5s;
+}
+.userName:hover{
+    cursor: pointer;
+    background-color: var(--alios-primary);
+    border: 1px solid var(--alios-white);
+    color:  var(--alios-white);
+}
+.userPhoto{
+    cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   height: 3em;
+   width: 3em;
+   border-radius: 100%;
+   border: 2px solid var(--alios-primary);
+}
+.userPhoto img{
+    height: 3em;
+}
+@media (width < 648px) {
+    .header{
+    flex-direction: column-reverse ;
+    flex-wrap: wrap;
+    }
+    .userMenu{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    }
+}
