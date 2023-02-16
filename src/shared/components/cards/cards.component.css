@@ -45,10 +45,11 @@
     font-size: 1.6rem;
     color: var(--alios-grey-darker);
 }
-.cardInfo a{
+.cardInfo h2{
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--alios-primary);
+    cursor: pointer;
   
     text-decoration: none;
 }
